@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>U CONNECT - Event Details</title>
+  <link rel="stylesheet" href="../css/eventdetail.css">
+</head>
+<body>
+
+   <!-- Sticky Glass Navbar -->
+  <header class="nav">
+    <div class="nav-brand">
+      <a href="#">U CONNECT</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="event.html">Events</a></li>
+      <li><a href="myticket.html">My Ticket</a></li>
+    </ul>
+
+    <div class="nav-logout">
+      <a href="index.html" class="btn-logout">Logout</a>
+    </div>
+  </header>
+
+  <main class="events-container">
+  <div class="event-details-single-card">
+    
+    <!-- Category Badge -->
+    <span class="ticket-badge">Computer Science Club</span>
+
+    <!-- Giant Title at the Top Left -->
+    <h1 class="event-hero-title">Hackathon: Code for Campus</h1>
+
+    <!-- Description below the title -->
+    <p class="event-long-description">
+      Welcome to the ultimate campus innovation challenge! Hackathon: Code for Campus brings together 
+      passionate programmers, UI/UX designers, and creative problem-solvers for an intensive 12-hour 
+      coding marathon. Your mission is to conceptualize, build, and pitch functional software applications 
+      designed to directly improve student life, streamline campus logistics, or enhance learning management tools. 
+      Whether you are a seasoned full-stack developer or just starting your coding journey, mentoring sessions, 
+      free food, caffeinated beverages, and exciting tech prizes await all participants. Bring your laptop, 
+      your charging cables, and your boldest ideas!
+    </p>
+
+    <!-- Event Info Box -->
+    <div class="event-info-section">
+      <div class="info-item">
+        <span class="info-label">Date & Time</span>
+        <span class="info-value">Sat, 7 Nov 2026 at 08:30</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Venue</span>
+        <span class="info-value">Computer Lab 1</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Availability</span>
+        <span class="info-value">12 seats left</span>
+      </div>
+    </div>
+
+    <!-- Registration Form & Button -->
+    <form action="myticket.html" method="GET" class="registration-form">
+  <input type="hidden" name="event_id" value="1">
+  <button type="submit" class="btn-register-now">Register Now</button>
+</form>
+
+<p class="waitlist-notice">Instant confirmation. Waitlist will automatically trigger if capacity fills up.</p>
+</main>
+
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container"><small>&copy; 2026 U CONNECT. All rights reserved.</small></div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+
+/* style for login and register page */
+
+
+body{
+   background-color: #f1f0f0;
+    margin: 0;
+    width: 100%;               /* Ensures full width */
+    font-family: "San Francisco", "SF Pro", sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;    /* Stack items vertically from top to bottom */
+    box-sizing: border-box;
+    min-height: 100vh;         
+    padding-top: 60px;
+}
+
+
+a{
+    text-decoration: none;     
+    color: #211429;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.main-content {
+    flex: 1;                   /* Takes up all available vertical space */
+    display: flex;
+    justify-content: center;   /* Centers the form card horizontally */
+    align-items: center;       /* Centers the form card vertically */
+    width: 100%;
+}
+
+.form-card {
+   background-color: #ffffff; 
+    width: 450px;              
+    padding: 40px;             
+    border-radius: 12px;       
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #f3f2f2;
+   
+}
+
+.button {
+    background-color: #211429;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+button:hover {
+    background-color: #663894;
+}
+
+
+
+.footer {
+    width: 100%;              
+    text-align: center;       
+    padding: 20px 0;          
+    background-color: #000000; 
+    color: #ffffff;            
+    font-size: 14px;
+    border-top: 1px solid #eaeaea; 
+    box-sizing: border-box;
+  
+}

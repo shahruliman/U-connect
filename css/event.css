@@ -1,0 +1,429 @@
+
+body {
+    margin: 0;
+    font-family: "San Francisco", "SF Pro", sans-serif;
+    background: #f0eeee;
+    color: #333333;
+    min-height: 100vh;          /* was height: 200vh */
+    padding-bottom: 70px;       /* keeps content clear of the fixed footer */
+    box-sizing: border-box;
+}
+
+/* navbar styles */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;                    
+    padding: 0 40px;                     
+    box-sizing: border-box;
+    background: rgba(255, 254, 254, 0.9); /* Frosted light grey background */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    z-index: 1000; 
+}
+
+.nav-brand {
+    margin-right: auto;                     
+}
+
+.nav-brand a {
+    color: #181414;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;                     
+    letter-spacing: 1px;
+}
+
+/* Centered Navigation Links */
+.nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    display: flex;
+    gap: 70px;                                 
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 22px;            
+    font-weight: 500;
+    padding: 8px 18px;                  
+    border-radius: 20px;                
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.nav-links a:hover {
+    color: #000000;
+    background: rgba(0, 0, 0, 0.06);     /* Darker subtle fill for light theme hover */
+    backdrop-filter: blur(10px);          
+    -webkit-backdrop-filter: blur(10px);  
+    border: 1px solid rgba(0, 0, 0, 0.15); /* Subtle border highlight */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+    transform: translateY(-2px);          
+}
+
+/* Logout Button */
+.btn-logout {
+    background-color: rgba(240, 239, 239, 0.8); 
+    color: #030303;                                           
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-logout:hover {
+    background-color: #000000;                                      
+    transform: translateY(-2px);
+    color: #ffffff;              
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 20px;
+
+}
+
+
+/* ==========================================
+
+   Content Wrapper & Footer
+
+   ========================================== */
+
+.content {
+    padding-top: 130px;                    
+    text-align: center;
+
+}
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+
+}
+
+
+
+
+
+
+/* ==========================================
+
+   Event page styles
+
+   ========================================== */
+/* serach bar and filter and reset button */
+
+.events-container {
+    padding: 140px 60px 60px 60px;
+    max-width: 1700px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.events-container h1 {
+    color: #1a102f;
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0 0 8px 0;
+}
+
+.events-container p {
+    color: #666666;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+
+
+/* Flex container for search bar layout */
+
+.search-filter-bar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* Text search input */
+
+.search-filter-bar input[type="text"] {
+    flex: 3;
+    min-width: 350px;
+    padding: 20px 24px;
+    font-size: 18px;
+    border: 1.5px solid #dcdcdc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+
+.search-filter-bar input[type="text"]:focus {
+    border-color: #000000;
+}
+
+
+
+/* Dropdown filter selector */
+
+.search-filter-bar select {
+    flex: 1;
+    min-width: 220px;
+    padding: 20px 24px;
+    font-size: 18px;
+    border: 1.5px solid #dcdcdc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+
+
+.search-filter-bar select:focus {
+
+    border-color: #000000;
+
+}
+
+
+
+/* Primary Search Button */
+
+.search-filter-bar button.btn-search {
+    padding: 20px 40px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+
+
+.search-filter-bar button.btn-search:hover {
+    background-color: #000000;
+    transform: translateY(-1px);
+
+}
+
+
+
+/* Secondary Reset Button */
+
+.search-filter-bar button.btn-reset {
+    padding: 20px 36px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #000000;
+    border: 1.5px solid #000000;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+
+.search-filter-bar button.btn-reset:hover {
+    background-color: rgba(81, 45, 168, 0.08);
+    transform: translateY(-1px);
+
+}
+
+
+
+
+
+
+.ticket-card {
+    --page-bg: #f0eeee;               
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 220px;
+    border-radius: 0px 20px 20px 0px;
+    padding: 25px;
+    box-sizing: border-box;
+    margin: 25px 0 0 0;
+    overflow: hidden;               
+    background:
+        linear-gradient(135deg,
+            rgba(124, 58, 237, 0.20) 0%,
+            rgba(255, 255, 255, 0.55) 45%,
+            rgba(236, 72, 153, 0.18) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #000000;
+    text-decoration: none;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+    border: 2px solid #7c3aed;        /* outline kept */
+    transition: all 0.3s ease;
+}
+
+.ticket-card:hover {
+    background:
+        linear-gradient(135deg,
+            rgba(124, 58, 237, 0.30) 0%,
+            rgba(255, 255, 255, 0.65) 45%,
+            rgba(236, 72, 153, 0.26) 100%);
+    border-color: #6d28d9;
+    box-shadow: 0 12px 40px 0 rgba(124, 58, 237, 0.25);
+    transform: translateY(-3px);
+}
+
+.ticket-details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 14px;
+    border-top: 2px dashed rgba(124, 58, 237, 0.4);
+}
+
+
+
+
+
+/* Event Cards Grid Layout (3 items per row) */
+
+.events-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Ensure individual cards fill their grid cell width perfectly */
+
+.events-list .ticket-card {
+    width: 100%;
+    margin: 0;
+
+}
+
+
+
+/* Club Category Pill Badge */
+
+.ticket-badge {
+
+    display: inline-block;
+    background-color: rgba(124, 58, 237, 0.12);
+    color: #5b21b6;
+    border: 1px solid rgba(124, 58, 237, 0.3);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+
+}
+
+
+
+/* Event Title Styling */
+
+.ticket-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #000000;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+
+}
+
+
+
+/* Date, Time and Venue Container */
+
+/* Perforation line above the date/venue */
+.ticket-details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    gap: 4px;
+    padding-top: 14px;
+    border-top: 2px dashed rgba(124, 58, 237, 0.4);
+}
+
+
+
+/* Side notches (the card's overflow:hidden leaves a half-circle on each edge) */
+.ticket-details::before,
+.ticket-details::after {
+    content: "";
+    position: absolute;
+    top: -13px;                       /* centres the circle on the dashed line */
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--page-bg);
+    border: 2px solid #7c3aed;
+    box-sizing: border-box;
+}
+
+.ticket-details::before { left: -37px; }   /* 25px padding + 12px radius */
+.ticket-details::after  { right: -37px; }
+
+
+.ticket-datetime { 
+    font-size: 18px;
+    font-weight: bold;
+ }
+
+.ticket-venue    { 
+    font-size: 18px;
+    font-weight: bold;
+ }
+
+.ticket-seats    { 
+    font-size: 18px; 
+    font-weight: bold;
+    margin: 0; 
+}

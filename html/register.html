@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>U-CONNECT - Student Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+    <div class="container">
+        
+     
+        <div class="right-panel">
+            <div class="form-box">
+                <h2>Create an Account</h2>
+                <p class="subtitle">Enter your details to create a new account.</p>
+
+            
+                 <form action="student-login.html" method="GET">
+
+                     <div class="input-group">
+                        <label for="account-type">Account Type</label>
+                        <select id="account-type" name="account-type" required>
+                            <option value="student">Student</option>
+                            <option value="admin-committee">Admin/Committee</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label> Username</label>
+                        <input type="text" required>
+                    </div>
+
+                      <div class="input-group">
+                        <label> Email</label>
+                        <input type="email" required>
+                    </div>
+
+                     <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" required>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label>Confirm Password</label>
+                        <input type="password" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn admin-btn">Create Account</button>
+                </form>
+
+                
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>U CONNECT - My Ticket</title>
+  <link rel="stylesheet" href="../css/event.css">
+  <link rel="stylesheet" href="../css/myticket.css">
+</head>
+<body>
+
+  <!-- Sticky Glass Navbar -->
+  <header class="nav">
+    <div class="nav-brand">
+      <a href="#">U CONNECT</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="event.html">Events</a></li>
+      <li><a href="myticket.html">My Ticket</a></li>
+    </ul>
+    <div class="nav-logout">
+      <a href="index.html" class="btn-logout">Logout</a>
+    </div>
+  </header>
+
+  <main class="tp-container">
+
+    <h1>My Tickets</h1>
+    <p class="tp-sub">Manage your event tickets and view your history</p>
+
+    <!-- Summary cards -->
+    <div class="stats">
+      <div class="stat-card"><span class="stat-num">3</span><span class="stat-label">Upcoming</span></div>
+      <div class="stat-card"><span class="stat-num">2</span><span class="stat-label">Attended</span></div>
+      <div class="stat-card"><span class="stat-num">1</span><span class="stat-label">Cancelled</span></div>
+      <div class="stat-card"><span class="stat-num">1</span><span class="stat-label">Waitlist</span></div>
+    </div>
+
+    
+
+       <!-- UPCOMING TICKETS -->
+    <section class="tp-section">
+      <h2>Upcoming Tickets</h2>
+
+      <div class="tp-list">
+
+        <!-- Ticket 1 -->
+        <article class="tk">
+          <div class="tk-top">
+            <span class="ticket-badge">Computer Science Club</span>
+            <h3 class="tk-title">Hackathon: Code for Campus</h3>
+          </div>
+          <div class="tk-divider"></div>
+          <div class="tk-bottom">
+            <div><span class="tk-label">Date &amp; time</span><span class="tk-value">Sat, 7 Nov 2026 at 08:30</span></div>
+            <div><span class="tk-label">Venue</span><span class="tk-value">Computer Lab 1</span></div>
+            <div><span class="tk-label">Ticket ID</span><span class="tk-value">UC-0007-A12</span></div>
+            <div class="tk-actions">
+              <button class="btn-mini">View</button>
+              <button class="btn-mini outline">Cancel</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Ticket 2 -->
+        <article class="tk">
+          <div class="tk-top">
+            <span class="ticket-badge">AI Society</span>
+            <h3 class="tk-title">AI Society Workshop: Intro to Machine Learning</h3>
+          </div>
+          <div class="tk-divider"></div>
+          <div class="tk-bottom">
+            <div><span class="tk-label">Date &amp; time</span><span class="tk-value">Wed, 11 Nov 2026 at 14:00</span></div>
+            <div><span class="tk-label">Venue</span><span class="tk-value">Lecture Hall 3</span></div>
+            <div><span class="tk-label">Ticket ID</span><span class="tk-value">UC-0011-B07</span></div>
+            <div class="tk-actions">
+              <button class="btn-mini">View</button>
+              <button class="btn-mini outline">Cancel</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+   
+
+    <!-- TICKET HISTORY -->
+    <section class="tp-section">
+      <div class="section-head">
+        <div>
+          <h2>Ticket History</h2>
+          <p class="tp-sub">Your past and cancelled tickets</p>
+        </div>
+        <select class="status-select">
+          <option value="all">All status</option>
+          <option value="attended">Attended</option>
+          <option value="missed">Missed</option>
+          <option value="cancelled">Cancelled</option>
+        </select>
+      </div>
+
+      <div class="glass-panel table-wrap">
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>Ticket ID</th>
+              <th>Event</th>
+              <th>Club</th>
+              <th>Date</th>
+              <th>Venue</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UC-0950-D21</td><td>Python for Beginners</td><td>Computer Science Club</td>
+              <td>Mon, 12 Oct 2026</td><td>Computer Lab 2</td>
+              <td><span class="pill attended">Attended</span></td>
+            </tr>
+            <tr>
+              <td>UC-0928-E05</td><td>Intro to Arduino</td><td>Robotics Club</td>
+              <td>Mon, 28 Sep 2026</td><td>Maker Space Lab</td>
+              <td><span class="pill attended">Attended</span></td>
+            </tr>
+            <tr>
+              <td>UC-0914-F11</td><td>Logo Design Night</td><td>Design Society</td>
+              <td>Mon, 14 Sep 2026</td><td>Multimedia Studio</td>
+              <td><span class="pill missed">Missed</span></td>
+            </tr>
+            <tr>
+              <td>UC-0830-G02</td><td>Ethical Hacking Talk</td><td>Cybersecurity Club</td>
+              <td>Sun, 30 Aug 2026</td><td>Auditorium A</td>
+              <td><span class="pill cancelled">Cancelled</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container"><small>&copy; 2026 U CONNECT. All rights reserved.</small></div>
+  </footer>
+
+</body>
+</html>

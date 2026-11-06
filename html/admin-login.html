@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>U-connect - Admin Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+    <div class="split-container">
+        
+        <!-- Left Brand / Info Panel (Admin Theme) -->
+        <div class="left-panel admin-bg">
+            <div class="brand-badge">U-CONNECT</div>
+            <h1>Manage Events & Attendance.</h1>
+            <p>Create new club workshops, oversee seat capacities, review turnouts, and monitor venue utilization effortlessly.</p>
+        </div>
+
+        <!-- Right Form Panel -->
+        <div class="right-panel">
+            <div class="form-box">
+                <h2>Admin Login</h2>
+                <p class="subtitle">Authorized committee & admin access only.</p>
+
+                <!-- 1. ADJUSTED HERE: Added action="homepage.html" -->
+                <form action="homepage.html" method="GET">
+                    <div class="input-group">
+                        <label>Admin/Committee username</label>
+                        <input type="text" placeholder="e.g. admin_cs" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+
+                    <!-- 2. ADJUSTED HERE: Changed <a> back to a submit <button> -->
+                    <button type="submit" class="submit-btn admin-btn">Log in as Admin</button>
+                </form>
+
+                <div class="footer-links">
+                    Looking for student portal? <a href="student-login.html">Log in here</a><br>
+                    New here? <a href="register.html">Create an account</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
